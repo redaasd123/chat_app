@@ -11,15 +11,13 @@ class RegisterCubit extends Cubit<RegisterState> {
   Future<void> registerUser({required String email,required String password}) async {
     try {
       emit(RegisterLoading());
-      UserCredential user = await FirebaseAuth.
+      await FirebaseAuth.
       instance.createUserWithEmailAndPassword(
           email: email!,
           password: password!);
       emit(RegisterSuccess());
 
     } on FirebaseAuthException catch (e) {
-      // هنا بنتعامل مع الأخطاء الخاصة بـ Firebase Authentication
-
       if (e.code == 'user-not-found') {
         emit(RegisterFailure(errorMessage : 'user-not-found'));
       } else if (e.code == 'wrong-password') {

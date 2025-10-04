@@ -5,3 +5,4 @@ const kLogo = 'assets/images/moon.jpg';
 const kMessageCollection = 'messages';
 const kMessage = 'message';
 const kCreatedAt = 'CreatedAt';
+const kId = 'id';

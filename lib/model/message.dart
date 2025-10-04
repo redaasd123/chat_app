@@ -11,7 +11,7 @@ class Message{
 factory Message.fromJson( jsonData)
 {
   return Message(message: jsonData[kMessage],
-  id: jsonData['id'],
+  id: jsonData[kId],
   timestamp: jsonData[kCreatedAt]);
 
 }

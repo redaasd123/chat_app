@@ -11,19 +11,15 @@ class LoginCubit extends Cubit<LoginState> {
 
   Future<void> loginUser({required String email, required String password}) async {
     try {
-      emit(LoginLoading()); // بنصدر حالة التحميل
-
-      // استخدام email و password مباشرة بدون ! لأنهم "required"
+      emit(LoginLoading());
       await FirebaseAuth.instance.signInWithEmailAndPassword(
         email: email,
         password: password,
       );
 
-      emit(LoginSuccess()); // بنصدر حالة النجاح لو التسجيل تم بنجاح
+      emit(LoginSuccess());
 
     } on FirebaseAuthException catch (e) {
-      // هنا بنتعامل مع الأخطاء الخاصة بـ Firebase Authentication
-
       if (e.code == 'user-not-found') {
         emit(LoginFailure(errorMessage : 'user-not-found'));
       } else if (e.code == 'wrong-password') {
@@ -34,7 +30,6 @@ emit(LoginFailure(errorMessage: 'صيغة البريد الإلكتروني غي
         emit(LoginFailure(errorMessage: 'حدث خطأ: ${e.message ?? "غير معروف"}'));
       }
     } catch (e) {
-      // هنا بنتعامل مع أي أخطاء تانية مش خاصة بـ Firebase Authentication
       emit(LoginFailure(errorMessage : 'somthing worng'));
     }
   }

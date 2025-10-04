@@ -36,3 +36,25 @@ Users can **register, log in, and chat instantly with friends** — messages app
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/RedaHassanKhattab/chat_app.git
+
+
+# Chat App
+
+A beautiful Flutter chat application using Firebase 🔥
+
+# Chat App
+
+A Flutter chat app where users can register, log in, and chat with friends in real-time using Firebase 🔥
+
+## 📱 App Preview
+
+![Login Page](https://github.com/redaasd123/chat_app/blob/main/assets/images/login_page.jpeg?raw=true)
+
+# Chat App
+
+A Flutter chat app where users can register, log in, and chat with friends in real-time using Firebase 🔥
+
+## 📱 App Preview
+
+![chat Page](https://github.com/redaasd123/chat_app/blob/main/assets/images/chat_bubble.jpeg?raw=true)
+

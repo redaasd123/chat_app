@@ -48,7 +48,7 @@ A Flutter chat app where users can register, log in, and chat with friends in re
 
 ## 📱 App Preview
 
-![Login Page](https://github.com/redaasd123/chat_app/blob/main/assets/images/login_page.jpeg?raw=true)
+![Login Page](assets/images/login_page.jpeg)
 
 # Chat App
 
@@ -56,5 +56,5 @@ A Flutter chat app where users can register, log in, and chat with friends in re
 
 ## 📱 App Preview
 
-![chat Page](https://github.com/redaasd123/chat_app/blob/main/assets/images/chat_bubble.jpeg?raw=true)
+![chat Page](assets/images/chat_bubble.jpeg)
 
